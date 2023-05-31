@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(15, 15, 15, 0.944);
+  background-image: url(img/vecteezy_world-map_1198030.png);
+  background-size: 100% 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#newyork,
+#london,
+#seoul,
+#hongkong,
+#tokyo {
+  width: 200px;
+  height: 200px;
+}
+
+.rect {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgb(83, 83, 83),
+    rgb(182, 182, 182)
+  );
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #newyork > .rect {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgb(185, 228, 185),
+    rgb(216, 231, 216)
+  );
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#london > .rect {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgb(130, 194, 143),
+    rgb(185, 226, 193)
+  );
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#seoul > .rect {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgb(108, 181, 129),
+    rgb(142, 187, 152)
+  );
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hongkong > .rect {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgb(58, 116, 88),
+    rgb(94, 123, 96)
+  );
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tokyo > .rect {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgb(35, 94, 61),
+    rgb(100, 141, 103)
+  );
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.cir {
+  width: 95%;
+  height: 95%;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-cir {
+  width: 95%;
+  height: 95%;
+  background: black url(img/clock.png);
+  background-size: cover;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-cir .center {
+  width: 15px;
+  height: 15px;
+  background-image: linear-gradient(
+    to right,
+    rgb(103, 103, 103),
+    rgb(204, 204, 204)
+  );
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.hr,
+.min,
+.sec {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.hr::before {
+  content: "";
+  width: 8px;
+  height: 40px;
+  background-color: rgba(214, 214, 214, 0.869);
+  position: absolute;
+  top: 5px;
+  border-radius: 10px;
+}
+
+.min::before {
+  content: "";
+  width: 5px;
+  height: 60px;
+  background-color: white;
+  position: absolute;
+  top: -13px;
+  border-radius: 10px;
+}
+
+.sec::before {
+  content: "";
+  width: 2px;
+  height: 90px;
+  background-color: white;
+  position: absolute;
+  top: -25px;
+}
+
+.country {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
